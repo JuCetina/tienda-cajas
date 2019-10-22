@@ -93,6 +93,7 @@ nav li a:hover{
     display: flex;
     justify-content: center;
     border-bottom: solid 2px #f9f9f9;
+    flex-wrap: wrap;
 }
 
 .benefit-container figure{
@@ -104,9 +105,9 @@ nav li a:hover{
     height: 100px;
 }
 
-.benefits{
-    width: 12%;
-    margin: 7%;
+.benefit{
+    width: 160px;
+    margin: 10%;
 }
 
 /* ------ mentions section -------- */
@@ -157,3 +158,20 @@ footer{
 }
 
 
+
+@media screen and (max-width: 600px){
+
+    .main-section{
+        margin: 4%;
+    }
+    
+    .products{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .product{
+        margin-top: auto;
+    }
+
+}
