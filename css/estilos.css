@@ -157,10 +157,15 @@ footer{
     padding: 10px;
 }
 
+/* ----- Responsive design ----- */
 
+@media screen and (max-width: 768px){
+    .product {
+        margin-top: -150px;
+    }
+}
 
 @media screen and (max-width: 600px){
-
     .main-section{
         margin: 4%;
     }
@@ -173,5 +178,68 @@ footer{
     .product{
         margin-top: auto;
     }
+}
 
+/* ----- Animaciones ----- */
+
+.fadeIn{
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes fadeIn{
+    from {
+            opacity: 0;
+    }
+    to {
+            opacity: 1;
+    }
+}
+
+.fadeInDown{
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes fadeInDown{
+    from {
+            opacity: 0;
+            transform: translate3d(0, -100%, 0);
+            -webkit-transform: translate3d(0, -100%, 0);
+    }
+    to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+            -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp{
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes fadeInUp{
+    from {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+            -webkit-transform: translate3d(0, 100%, 0);
+    }
+    to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+            -webkit-transform: translate3d(0, 0, 0);
+    }
 }
