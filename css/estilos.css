@@ -40,7 +40,7 @@ nav li a:hover{
     color: white;
 }
 
-/* -------------------- main section ---------------- */
+/* -------------------- Main section ---------------- */
 
 .main-section{
     margin: 10% 26% 22%;
@@ -87,7 +87,7 @@ nav li a:hover{
     background: #5e9e22;
 }
 
-/* ------------------- benefits section ---------------- */
+/* ------------------- Benefits section ---------------- */
 
 .benefit-container{
     display: flex;
@@ -110,7 +110,7 @@ nav li a:hover{
     margin: 10%;
 }
 
-/* ------ mentions section -------- */
+/* ------ Mentions section -------- */
 
 .mentions-title{
     text-align: center;
@@ -180,7 +180,7 @@ footer{
     }
 }
 
-/* ----- Animaciones ----- */
+/* ----- Animations ----- */
 
 .fadeIn{
     animation-name: fadeIn;
@@ -243,3 +243,126 @@ footer{
             -webkit-transform: translate3d(0, 0, 0);
     }
 }
+
+/* ----- Sistema de grillas ----- */
+
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+
+.col-1{
+    width: 8.333333333333333%;
+}
+
+.col-2{
+    width: 16.66666666666667%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33333333333333%;
+}
+
+.col-5{
+    width: 41.66666666666667%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.33333333333333%;
+}
+
+.col-8{
+    width: 66.66666666666666%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.33333333333333%;
+}
+
+.col-11{
+    width: 91.66666666666666%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12{
+    padding: 10px;    
+}
+
+@media screen and (max-width: 900px){
+    .row{
+        display: inherit;
+    }
+    
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12{
+        width: 100%;
+    }
+}
+
+/* ----- Products section ----- */
+
+@media screen and (max-width: 900px){
+    .row p,
+    .row h2{
+        text-align: center;
+    }
+}
+
+.row h1{
+    font-size: 20px;
+}
+
+.row h2{
+    font-size: 15px;
+}
+
+.image-container{
+    margin: 0;
+    text-align: center;
+}
+
+/* ----- Sales section ----- */
+
+
+
