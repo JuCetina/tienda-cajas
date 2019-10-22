@@ -1,0 +1,159 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #313337;
+}
+
+/* -------------- nav section ---------------- */
+
+nav{
+    padding: 10px;
+    display: flex;
+    background: #7ACC2D;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-options{
+    display: inherit;
+}
+
+nav ul{
+    display: inherit;
+}
+
+nav li{
+    display: inherit;
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #313337;
+}
+
+nav li a:hover{
+    color: white;
+}
+
+/* -------------------- main section ---------------- */
+
+.main-section{
+    margin: 10% 26% 22%;
+    text-align: center;
+}
+
+.products{
+    background-image: url('../images/curve.png');
+    background-size: cover;
+    background-position: center top;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.product{
+    margin: 10px;
+    margin-top: -220px;
+}
+
+.product .content{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 2px #c1bcbc;
+    width: 216px;
+}
+
+.image-content{
+    text-align: center;
+}
+
+.main-bottom{
+    background-color: #7ACC2D;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.main-bottom:hover{
+    background: #5e9e22;
+}
+
+/* ------------------- benefits section ---------------- */
+
+.benefit-container{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 2px #f9f9f9;
+}
+
+.benefit-container figure{
+    margin: 0;
+    text-align: center;
+}
+
+.benefit-container img{
+    height: 100px;
+}
+
+.benefits{
+    width: 12%;
+    margin: 7%;
+}
+
+/* ------ mentions section -------- */
+
+.mentions-title{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.mentions-container{
+    display: flex;
+    justify-content: center;
+    padding: 0 5% 5%;
+    flex-wrap: wrap;
+}
+
+.mention{
+    margin: 10px;
+    width: 236px;
+    border-radius: 3px;
+    box-shadow: 0 0 6px #c1bcbc;
+}
+
+.image-mention-container{
+    margin: 0;
+    overflow: hidden;
+}
+
+.image-mention-container img{
+    vertical-align: top;
+}
+
+.mention-title,
+.mention-description{
+    margin: 10px;
+}
+
+/* ------ footer ------- */
+
+footer{
+    background: #313337;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
