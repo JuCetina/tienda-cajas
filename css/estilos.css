@@ -1,3 +1,14 @@
+/* ----- Variables ----- */
+
+:root{
+    /* Colores */
+    --green-color: #7ACC2;
+    --obscure-color: #313337;
+    
+    /* Sombra de caja */
+    --box: 0 0 2px 1px #e6e5e9;
+}
+
 body,
 html{
     margin: 0;
@@ -72,18 +83,19 @@ nav li a:hover{
     text-align: center;
 }
 
-.main-bottom{
+.main-button{
     background-color: #7ACC2D;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     font-size: 17px;
     color: white;
     border: none;
     border-radius: 2px;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.main-bottom:hover{
+.main-botton:hover{
     background: #5e9e22;
 }
 
@@ -159,7 +171,7 @@ footer{
 
 /* ----- Responsive design ----- */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     .product {
         margin-top: -150px;
     }
@@ -253,7 +265,6 @@ footer{
 
 .row{
     display: flex;
-    align-items: center;
 }
 
 .col-1{
@@ -338,16 +349,32 @@ footer{
     .col-12{
         width: 100%;
     }
-}
 
-/* ----- Products section ----- */
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12{
+        padding: 0;    
+    }
 
-@media screen and (max-width: 900px){
     .row p,
-    .row h2{
+    .row h1,
+    .row h2,
+    .row h3,
+    form{
         text-align: center;
     }
 }
+
+/* ----- Products section ----- */
 
 .row h1{
     font-size: 20px;
@@ -364,5 +391,31 @@ footer{
 
 /* ----- Sales section ----- */
 
+.payment-module{
+    box-shadow: var(--box);
+    padding: 10px;
+}
 
+.payment-module-image{
+    margin: 0;
+    text-align: center;
+}
 
+label{
+    display: block;
+    padding: 10px 0;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--obscure-color);
+    box-sizing: border-box;
+}
+
+.payment-module .main-button{
+    margin-top: 10px;
+}
