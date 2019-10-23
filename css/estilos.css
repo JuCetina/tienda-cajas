@@ -2,7 +2,7 @@
 
 :root{
     /* Colores */
-    --green-color: #7ACC2;
+    --green-color: #7ACC2D;
     --obscure-color: #313337;
     
     /* Sombra de caja */
@@ -167,6 +167,10 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+}
+
+footer a{
+    color: var(--green-color);
 }
 
 /* ----- Responsive design ----- */
@@ -419,3 +423,18 @@ input{
 .payment-module .main-button{
     margin-top: 10px;
 }
+
+.container-success{
+    background: var(--obscure-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-success a{
+    color: var(--green-color);
+}
+
