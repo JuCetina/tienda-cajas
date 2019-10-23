@@ -173,6 +173,13 @@ footer a{
     color: var(--green-color);
 }
 
+.footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
 /* ----- Responsive design ----- */
 
 @media screen and (max-width: 900px){
@@ -395,6 +402,11 @@ footer a{
 
 /* ----- Sales section ----- */
 
+.module{
+    display: flex;
+    align-items: center;
+}
+
 .payment-module{
     box-shadow: var(--box);
     padding: 10px;
@@ -423,6 +435,8 @@ input{
 .payment-module .main-button{
     margin-top: 10px;
 }
+
+/* ----- Páginas de pago exitoso y fallido ----- */
 
 .container-success{
     background: var(--obscure-color);
